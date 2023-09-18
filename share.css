@@ -35,11 +35,10 @@ audio {
     display: block;
 }
 
-.demo-row {
+.center {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     width: 100%;
-    justify-content: space-between;
 }
 
 #layout {

@@ -15,9 +15,38 @@
                 <p>Recently, there have been significant advancements in voice conversion, resulting in high-quality performance. However, there are still two critical challenges in this field. Firstly, current voice conversion methods have limited robustness when encountering unseen speakers. Secondly, they also have limited ability to control timbre representation. To address these challenges, this paper presents a novel approach leverages tokens of multi-layer residual approximations to enhance robustness when dealing with unseen speakers, called the residual speaker module. The introduction of multi-layer approximations facilitates the separation of information from the timbre, enabling effective control over timbre in voice conversion. The proposed method outperforms baselines in both subjective and objective evaluations, demonstrating superior performance and increased robustness.</p>
                 <img src="imgs/fig1.png" alt="Framework of the voice conversion and speaker representation control">
                 <h2>Demo</h2>
-                    <h3>Source</h3>
-                    <audio src="audios/gt/p225_002.wav" controls></audio>
-                    <br>
+                <div class="center">      
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Describe</th>
+                        </tr>
+                        <tr>
+                            <td>B01</td>
+                            <td>FreeVC, A pretrained speaker encoder is used.</td>
+                        </tr>
+                        <tr>
+                            <td>B01</td>
+                            <td>FreeVC-s, jointly trained speaker encoder is used.</td>
+                        </tr>
+                        <tr>
+                            <td>B01</td>
+                            <td>Replace speaker encoder in FreeVC with GST.</td>
+                        </tr>
+                        <tr>
+                            <td>P01</td>
+                            <td>Replace speaker encoder in FreeVC with 4 layers RSM. </td>
+                        </tr>
+                        <tr>
+                            <td>P02</td>
+                            <td>Ablation study for P01, RSM without residual connections.</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Source</h3>
+                <audio src="audios/gt/p225_002.wav" controls></audio>
+                <br>
+                <div class="center">
                     <table>
                         <tr>
                             <th>Target</th>
@@ -36,8 +65,8 @@
                         </tr>
                         <tr>
                             <th>B01</th>
-                            <td><audio src="audios/s/p225_002.14_208_000042_000000.wav" controls></audio></td>
-                            <td><audio src="audios/s/p225_002.17_363_000005_000000.wav" controls></audio></td>
+                            <td><audio src="audios/pretrain/p225_002.14_208_000042_000000.wav" controls></audio></td>
+                            <td><audio src="audios/pretrain/p225_002.17_363_000005_000000.wav" controls></audio></td>
                         </tr>
                         <tr>
                             <th>B02</th>
@@ -50,9 +79,11 @@
                             <td><audio src="audios/gst/p225_002.17_363_000005_000000.wav" controls></audio></td>
                         </tr>
                     </table>
-                    <h3>Source</h3>
-                    <audio src="audios/gt/p226_045.wav" controls></audio>
-                    <br>
+                </div>
+                <h3>Source</h3>
+                <audio src="audios/gt/p226_045.wav" controls></audio>
+                <br>
+                <div class="center">
                     <table>
                         <tr>
                             <th>Target</th>
@@ -71,8 +102,8 @@
                         </tr>
                         <tr>
                             <th>B01</th>
-                            <td><audio src="audios/s/p226_045.14_212_000019_000000.wav" controls></audio></td>
-                            <td><audio src="audios/s/p226_045.17_363_000014_000000.wav" controls></audio></td>
+                            <td><audio src="audios/pretrains/p226_045.14_212_000019_000000.wav" controls></audio></td>
+                            <td><audio src="audios/pretrains/p226_045.17_363_000014_000000.wav" controls></audio></td>
                         </tr>
                         <tr>
                             <th>B02</th>
@@ -85,6 +116,7 @@
                             <td><audio src="audios/gst/p226_045.17_363_000014_000000.wav" controls></audio></td>
                         </tr>
                     </table>
+                </div>
                 <h2>Voice Control</h2>
                 <img src="imgs/fig2.png" alt="Mel-spectrogram of synthesized speech after replacing speaker representations extracted by RSM layer by layer">
                 <p>Todo...</p>
