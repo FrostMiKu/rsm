@@ -16,11 +16,13 @@
                 <img src="imgs/fig1.png" alt="Framework of the voice conversion and speaker representation control">
                 <h2>Demo</h2>
                 <div class="center">      
-                    <table>
-                        <tr>
-                            <th>ID</th>
-                            <th>Describe</th>
-                        </tr>
+                    <table class="triline">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Describe</th>
+                            </tr>
+                        </thead>
                         <tr>
                             <td>B01</td>
                             <td>FreeVC, A pretrained speaker encoder is used.</td>
@@ -119,7 +121,14 @@
                 </div>
                 <h2>Voice Control</h2>
                 <img src="imgs/fig2.png" alt="Mel-spectrogram of synthesized speech after replacing speaker representations extracted by RSM layer by layer">
-                <p>Todo...</p>
+                <div class="row">
+                    <audio src="audios/ve/origin.wav" controls></audio>
+                    <audio src="audios/ve/layer1.wav" controls></audio>
+                    <audio src="audios/ve/layer2.wav" controls></audio>
+                    <audio src="audios/ve/layer3.wav" controls></audio>
+                    <audio src="audios/ve/layer4.wav" controls></audio>
+                    <audio src="audios/ve/all.wav" controls></audio>
+                </div>
             </div>
         </div>
     </div>

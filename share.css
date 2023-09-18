@@ -41,6 +41,22 @@ audio {
     width: 100%;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.triline {
+    border-collapse: collapse;
+    border: solid #000;
+    border-width: 1.5px 0 1.5px 0;
+}
+
+.triline thead {
+    border-bottom: solid #000;
+    border-width: 1px;
+}
+
 #layout {
     display: flex;
     flex-flow: row wrap;
