@@ -35,6 +35,10 @@ audio {
     display: block;
 }
 
+table {
+    text-align: left;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -55,6 +59,10 @@ audio {
 .triline thead {
     border-bottom: solid #000;
     border-width: 1px;
+}
+
+.triline > tbody > tr > th {
+    text-align: right;
 }
 
 #layout {
